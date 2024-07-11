@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z_index_practice</title>
+    <style>
+        .box{
+            position: relative;
+        }
+        .boy{
+            top: -50px;
+            left: 40px;
+            z-index: 2;
+        }
+        .water{
+            top: -380px;
+            right: 10px;
+            z-index:1;
+        }
+        .pool{
+            top: -800px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>a bot playing with water in a tub!</h3>
+    <div class="container">
+        <div class="box boy">
+            <img src="assets/boy-swimsuit.png" alt="boy boy-swimsuit">
+        </div>
+        <div class="box water">
+            <img src="assets/water.png" alt="boy boy-swimsuit">
+        </div>
+        <div class="box pool">
+            <img src="assets/inflatable-pool.png" alt="boy boy-swimsuit">
+        </div>
+    </div>
+</body>
+</html>
