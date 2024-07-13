@@ -1,0 +1,51 @@
+/* task-1 start */.container{ 
+    display: flex;
+    height: 650px;
+    gap: 10px;
+}
+.task-1-h3{
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+.div1{
+    background-color: aqua;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    border-radius: 20px;
+    
+}
+.div2{
+    background-color: lightpink;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    border-radius: 20px;
+    
+} 
+/* task-1 end */
+
+
+/* task-1 media queries */
+@media  screen and (max-width:576px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .div1{
+        height: 40%;
+        width: 100%;
+    }
+    .div2{
+        height: 60%;
+        width: 100%;
+    }
+    .h3{
+
+    }
+    
+}
