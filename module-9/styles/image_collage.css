@@ -13,7 +13,9 @@ img{
     /* gap: 5px ; */
 }
 .row>div{
-    flex: 1;
+    /* flex: 1; */
+    flex: 2;
+    
 }
 .square-collage{
     display: grid;
