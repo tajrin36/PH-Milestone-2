@@ -294,6 +294,27 @@ padding: 20px;
         width: 100%;
     }
 }
+
+.footer{
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: rgba(255, 244, 231, 1);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.footer-para{
+    color: rgba(66, 66, 66, 1);
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: 15px;
+    
+    
+    
+
+}
 /* for medium devices */
 @media screen and (min-width:576px) and (max-width:992px) {
     
