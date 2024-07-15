@@ -13,13 +13,14 @@
 .btn-primary{
     background-color: rgba(255, 144, 14, 1);
     color: white;
+    font-family: "Work Sans", sans-serif;
+    border: none;
+    border-radius: 8px;
     height: 50px;
     width: 150px;
     font-size: 1.2rem;
     font-weight: 600;
-    font-family: "Work Sans", sans-serif;
-    border: none;
-    border-radius: 8px;
+    
 }
 /* navbar styles */
 .head{
@@ -76,8 +77,8 @@
 .banner-para{
     font-weight: 400;
     font-size: 0.7rem;
-    text-align: center;
     color: rgba(114, 114, 114, 1);
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -92,6 +93,7 @@ main{
     align-items: center;
     gap: 40px;
     margin-top: 100px;
+    margin-bottom: 60px;
 }
 .image-container{
     display:grid;
@@ -125,16 +127,96 @@ main{
     font-weight: 700;
 }
 
+/* features styles */
+.feature-card-image-container{
+    display: flex;
+    gap: 100px;
+    /* border: 1px solid black; */
+}
+
+.feature-head{
+    color: rgba(19, 19, 19, 1);
+    font-weight: 700;
+    font-size:1.9rem;
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 15px;
+}
+.feature-subhead{
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: rgba(114, 114, 114, 1);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.features-left{
+    max-width: 450px;
+    padding: 10px;
+    /* border: 1px solid black; */
+
+}
+.feature-card{
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.feature-card-head{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: rgba(19, 19, 19, 1);
+    margin-bottom: 10px;
+}
+.feature-card-para{
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: rgba(114, 114, 114, 1);
+}
+.image-feature{
+    height: 850px;
+    width: 100%;
+}
+.Experience-badge{
+    padding: 40px 42px;
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    border: none;
+    border-radius: 8px;
+    margin-left: -60px;
+    margin-top: -100px;
+    
+}
+.Experience-years{
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.Experience{
+
+}
+
 /* responsive media queries for header section */
 @media screen and (max-width:576px) {
     .navbar,
     .nav-links,
-    .teams
+    .teams,
+    .feature-card-image-container
     {
         flex-direction: column;
     }
     .image-container{
         grid-template-columns: repeat(1,1fr);
+    }
+    .Experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .features-left{
+        width: 100%;
+        padding: 0px;
+    }
+    .image-feature{
+        width: 100%;
     }
 }
 /* for medium devices */
